@@ -37,7 +37,7 @@ Note that each of the three commands above should be executed from another termi
 
 ## ROS Node Graph
 
-![rqt node graph](docs/rosgraph.svg)
+![rqt node graph](docs/rosgraph.png)
 
 
 ## Current Version 
