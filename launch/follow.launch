@@ -1,0 +1,32 @@
+<launch>
+    <!-- 启动海龟仿真器 -->
+    <!-- <node pkg="turtlesim" type="turtlesim_node" name="sim"/> -->
+    <!-- 启动键盘控制 -->
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+
+        <!-- 创建领导者乌龟节点 -->
+    <node pkg="turtle_follow" type="turtle_follow_turtle_leader"  name="turtle_leader" />
+
+
+    <!-- 创建五个乌龟节点 -->
+    <node pkg="turtle_follow" type="turtle_follow_turtle_new" args="A B C D E" name="turtle_new" />
+    <!-- 创建六个乌龟的tf广播器 -->
+    <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="A" name="turtle1_broadcaster" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="B" name="turtle2_broadcaster" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="C" name="turtle3_broadcaster" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="D" name="turtle4_broadcaster" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="E" name="turtle5_broadcaster" />
+     <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="turtle_leaderA" name="turtleA_broadcaster"  output="screen" />
+     <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="turtle_leaderB" name="turtleB_broadcaster"  output="screen" />
+     <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="turtle_leaderC" name="turtleC_broadcaster"   output="screen"/>
+     <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="turtle_leaderD" name="turtleD_broadcaster"   output="screen"/>
+     <node pkg="turtle_follow" type="turtle_follow_turtle_broadcaster" args="turtle_leaderE" name="turtleE_broadcaster"   output="screen"/>
+ 
+    <!-- 第一个参数的乌龟跟随第二个参数的乌龟 -->
+    <node pkg="turtle_follow" type="turtle_follow_turtle_listener" args="A turtle_leaderA" name="listener1"  output="screen"/>
+     <node pkg="turtle_follow" type="turtle_follow_turtle_listener" args="B turtle_leaderB" name="listener2" output="screen" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_listener" args="C turtle_leaderC" name="listener3" output="screen" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_listener" args="D turtle_leaderD" name="listener4" output="screen" />
+    <node pkg="turtle_follow" type="turtle_follow_turtle_listener" args="E turtle_leaderE" name="listener5" output="screen" /> 
+ </launch>
+
