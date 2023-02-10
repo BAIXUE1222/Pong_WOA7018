@@ -4,8 +4,6 @@ This repository hosts the source code for the ROS turtle_pong package, which imp
 
 ![Short Game Play](docs/turtle_pong.gif)
 
-To learn how the package was created, please read the [documentation](https://fjp.at/ros/turtle-pong).
-
 ## Usage
 
 To use the `turtle_pong` package, clone this repository into the `src` folder of your catkin workspace:
