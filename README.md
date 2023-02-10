@@ -2,7 +2,7 @@
 
 This repository hosts the source code for the ROS turtle_pong package, which implements the auto-Pong arcade video game for the Robot Operating System using Turtlesim.
 
-![Short Game Play](docs/turtle_pong.gif)
+![Short Game Play](docs/auto-pong game in turtlesim.gif)
 
 ## Usage
 
