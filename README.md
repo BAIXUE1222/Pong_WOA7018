@@ -41,18 +41,14 @@ The game can be played with the w/s keys and the up/down arrow keys to control t
 ![rqt node graph](docs/rosgraph.svg)
 
 
-## Current Version and Missing Features
+## Current Version 
 
+
+## Missing Features
 This is the first release (version 0.0.0). The following features are planned, and contributions to them or new features and code improvements are welcome.
 
 - Handle missed ball cases (left and right)
 - Add scoreboard logic (for example, using a new turtle to draw player scores)
 - Fix bounce angle logic when the ball hits a paddle.
-- Add AI Player
-- Improve keyboard input
-- Fix the order of node launches
 - ...
 
-The short video below gives more insights into what is currently implemented:
-
-[![Turtle Pong YouTube](http://img.youtube.com/vi/i83dNyfm_QE/0.jpg)](https://youtu.be/i83dNyfm_QE)
