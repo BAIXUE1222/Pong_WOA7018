@@ -40,10 +40,8 @@ Note that each of the three commands above should be executed from another termi
 ![rqt node graph](docs/rosgraph.png)
 
 
-## Current Version 
 
-
-## Missing Features
+## Futurework Can be Done
 This is the first release (version 0.0.0). The following features are planned, and contributions to them or new features and code improvements are welcome.
 
 - Handle missed ball cases (left and right)
